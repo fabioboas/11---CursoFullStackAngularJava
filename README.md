@@ -1,1 +1,2 @@
-# segundo-repositorio-estudos-bootcamp
+# Bootcamp FullStack Dio Desafio Git
+- Organizar os estudos, simbora
