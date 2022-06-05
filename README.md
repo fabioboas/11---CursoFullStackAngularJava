@@ -1,2 +1,2 @@
-# Bootcamp FullStack Dio Desafio Git
+# Desafio Git/GitHub
 - Organizar os estudos, simbora
