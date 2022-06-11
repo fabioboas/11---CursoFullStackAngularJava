@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Justify Content</title>
+    <style>
+         .flex-container{
+            display: flex;
+            flex-flow: row nowrap;
+            border: 1px solid rgb(216, 98, 98);
+            max-width: 100%;
+            margin: 0;
+        }
+        .item{
+            background-color: rgb(134, 0, 139);
+            margin: 5px;
+            color: aliceblue;
+            text-align: center;
+            line-height: 50px;
+        }
+        .flex-start{
+            justify-content: start;
+        }
+        .flex-end{
+            justify-content: end;
+        }
+        .center{
+            justify-content: center;
+        }
+        .between{
+            justify-content: space-between;
+        }
+        .around{
+            justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>Start</p>
+    <section class="flex-container flex-start">
+        <div class="item">1</div>
+        <div class="item">2 terço</div>
+        <div class="item">3 meios</div>
+    </section>
+    <p>End</p>
+    <section class="flex-container flex-end">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+    <p>Center</p>
+    <section class="flex-container center">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+    <p>SpaceBetween</p>
+    <section class="flex-container between">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+    <p>SpaceAround</p>
+    <section class="flex-container around">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+
+    <h1>Column</h1>
+    <p>flex-start</p>
+    <section class="flex-container flex-start column">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+    
+    <p>flex-end</p>
+    <section class="flex-container flex-end column">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+
+    <p>Center</p>
+    <section class="flex-container center column">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+    <p>SpaceBetween</p>
+    <section class="flex-container between column">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+    <p>SpaceAround</p>
+    <section class="flex-container around column">
+        <div class="item">1</div>
+        <div class="item">2 meios</div>
+        <div class="item">3 terços</div>
+    </section>
+</body>
+</html>

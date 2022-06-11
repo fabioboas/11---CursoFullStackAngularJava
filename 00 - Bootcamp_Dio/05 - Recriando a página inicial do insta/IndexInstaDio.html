@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar • Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/icons8-instagram-velho-48.png" type="image/x-icon">
+
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 20000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "./img/instagram-celular.png";
+        images[1] = "./img/instagram-celular2.png";
+        
+    </script>
+
+</head>
+<body onload="startTimer()">
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+            <img id="img" src="./img/instagram-celular.png" alt="celular">
+        </div>
+        <div class="instagram-continue">
+            <div class="group">
+                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
+                <div class="profile-photo">
+                    <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
+                </div>
+                <a href="#" class="instagram-login">Continue como fabioboas__</a>
+                <a href="#" class="instagram-logout">Remover conta</a>
+            </div>
+            <div class="group">
+                <p class="not-account">Não é fabioboas__?</p>
+                <p class="not-account">
+                    <a href="#" class="link-blue">Alternar contas</a>
+                    ou
+                    <a href="#" class="link-blue">Inscreva-se</a>
+                </p>
+            </div>
+            <div class="get-the-app">
+                <p class="get-app">Obtenha o aplicativo</p>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="ft-container">
+        <div class ="ft-1" >
+            <a href="#">Meta</a>
+            <a href="#">Sobre</a>
+            <a href="#">Blog</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Ajuda</a>
+            <a href="#">API</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+            <a href="#">Principais contas</a>
+            <a href="#">Hashtags</a>
+            <a href="#">Localizações</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Carregamento de contatos e não usuários</a>
+        </div>
+
+        <div class ="ft-2">
+            <p>Português (Brasil)</p>
+            <p>© 2022 Exercício Insta Dio - Por @fabioboas__</p>
+        </div>
+    </footer>   
+</body>
+</html>

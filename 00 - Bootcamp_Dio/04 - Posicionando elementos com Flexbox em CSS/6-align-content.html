@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;;
+            flex: 1;
+            text-align: center;
+            color: aliceblue;
+            border: 1px solid black;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .between{
+            align-content: space-between;
+        }
+        .around{
+            align-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">maiores dolores rem, nesciunt repudiandae asperiores natus ipsum</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item">Reprehenderit, nemo </div>
+        <div class="item">id</div>
+        <div class="item">ex expedita</div>
+        <div class="item">adipisicing elit.  temporibus odit veniam?</div>
+        <div class="item">dolor a eius ipsa culpa nisi </div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">maiores dolores rem, nesciunt repudiandae asperiores natus ipsum</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item">Reprehenderit, nemo </div>
+        <div class="item">id</div>
+        <div class="item">ex expedita</div>
+        <div class="item">adipisicing elit.  temporibus odit veniam?</div>
+        <div class="item">dolor a eius ipsa culpa nisi </div>
+    </div>
+    <p>Start</p>
+    <div class="container flex-start">
+        <div class="item">maiores dolores rem, nesciunt repudiandae asperiores natus ipsum</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item">Reprehenderit, nemo </div>
+        <div class="item">id</div>
+        <div class="item">ex expedita</div>
+        <div class="item">adipisicing elit.  temporibus odit veniam?</div>
+        <div class="item">dolor a eius ipsa culpa nisi </div>
+    </div>
+    <p>End</p>
+    <div class="container flex-end">
+        <div class="item">maiores dolores rem, nesciunt repudiandae asperiores natus ipsum</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item">Reprehenderit, nemo </div>
+        <div class="item">id</div>
+        <div class="item">ex expedita</div>
+        <div class="item">adipisicing elit.  temporibus odit veniam?</div>
+        <div class="item">dolor a eius ipsa culpa nisi </div>
+    </div>
+    <p>Around</p>
+    <div class="container around">
+        <div class="item">maiores dolores rem, nesciunt repudiandae asperiores natus ipsum</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item">Reprehenderit, nemo </div>
+        <div class="item">id</div>
+        <div class="item">ex expedita</div>
+        <div class="item">adipisicing elit.  temporibus odit veniam?</div>
+        <div class="item">dolor a eius ipsa culpa nisi </div>
+    </div>
+    <p>Between</p>
+    <div class="container between">
+        <div class="item">maiores dolores rem, nesciunt repudiandae asperiores natus ipsum</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item">Reprehenderit, nemo </div>
+        <div class="item">id</div>
+        <div class="item">ex expedita</div>
+        <div class="item">adipisicing elit.  temporibus odit veniam?</div>
+        <div class="item">dolor a eius ipsa culpa nisi </div>
+    </div>
+<body>
+</html>

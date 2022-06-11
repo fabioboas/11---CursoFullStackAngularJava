@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Itens</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-flow: row nowrap;
+            border: 1px solid rgb(199, 172, 51);
+            max-width: 350px;
+            margin: 0;
+        }
+        .item{
+            background-color: rgb(21, 0, 139);
+            margin: 5px;
+            color: aliceblue;
+            text-align: center;
+            flex: 1;
+        }
+        .flex{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 250px;
+        }
+        .centralize{
+            height: 300px;
+            justify-content: center;
+        }
+        .centralize .item{
+            flex: 0;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>Align Center</p>
+    <section class="flex-container center">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur lo</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+    <p>Stretch</p>
+    <section class="flex-container stretch">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur lorererrererrererererererererererrre</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+    <p>Start</p>
+    <section class="flex-container start">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur lorererrererrererererererererererrre</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+    <p>End</p>
+    <section class="flex-container end">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur lorererrererrererererererererererrre</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+    <p>BaseLine</p>
+    <section class="flex-container baseline">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor<br> rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr sit amet consectetur lorererrererrererererererererererrre</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+
+    <h1>Column</h1>
+    <p>Align Center</p>
+    <section class="flex-container center column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur lo</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+    <p>Stretch</p>
+    <section class="flex-container stretch column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur lorererrererrererererererererererrre</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+    <p>Start</p>
+    <section class="flex-container start column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur lorererrererrererererererererererrre</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+    <p>End</p>
+    <section class="flex-container end column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur lorererrererrererererererererererrre</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+    <p>BaseLine</p>
+    <section class="flex-container baseline column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor<br> rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr sit amet consectetur lorererrererrererererererererererrre</div>
+        <div class="item">eu e vc vc e eu eu e vc vc e eu</div>
+    </section>
+
+    <p>Alinhamento Central na Telinha</p>
+    <section class="flex-container centralize center">
+        <div class="item">Lorem ipsum dolor sit amet
+             consectetur adipisicing elit.
+        </div>
+    </section>
+
+</body>
+</html>

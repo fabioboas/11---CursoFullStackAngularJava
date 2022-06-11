@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid grey;
+            max-width: 350px;
+        }
+        .item{
+            background-color: rgb(255, 217, 0);
+            margin: 5px;
+            font-size: 24px;
+            color: darkgrey;
+            text-align: center;
+        }
+        .s-1{
+            flex-shrink: 1;
+        }
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
+        .s-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .s-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .s-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>Shrink 1</p>
+    <div class="flex-container">
+      <div class="item s-1 fg-1">A</div>
+      <div class="item s-1 fg-1">B</div>
+      <div class="item s-1 fg-1">C</div>
+      <div class="item s-1 fg-1">D</div>
+      <div class="item s-1 fg-1">E</div>
+    </div>
+    <p>Shrink 1.1</p>
+    <div class="flex-container">
+      <div class="item s-1 fg-1">B</div>
+      <div class="item s-1 fg-1">LORE IPSUM DOIDO</div>
+      <div class="item s-1 fg-1">C</div>
+      <div class="item s-1 fg-1">D</div>
+    </div>
+    <p>Shrink 0 / basis 100px</p>
+    <div class="flex-container">
+      <div class="item s-0 fg-1">B</div>
+      <div class="item s-0 fg-1">LORE IPSUM DOIDO</div>
+      <div class="item s-0 fg-1">C</div>
+      <div class="item s-0 fg-1">D</div>
+    </div>
+    <p>Shrink 2 / basis 100px</p>
+    <div class="flex-container">
+      <div class="item s-2 fg-1">B</div>
+      <div class="item s-2 fg-1">LORE IPSUM DOIDO</div>
+      <div class="item s-2 fg-1">C LORE IPSUM DOIDAO MALUQUETE</div>
+      <div class="item s-2 fg-1">D LORE CHAROPE</div>
+    </div>
+</body>
+</html>
